@@ -1,14 +1,10 @@
 let canvas;
-let ctx; 
-let character = new Character();
-let enemies =[
-    new Fish(),
-    new Fish()
-];
+let world;
+
 
 function init(){
     canvas =document.getElementById('canvas');
-    ctx = canvas.getContext('2d');
+    world = new World(canvas);
 
-    console.log('My Character', character);
+    console.log('My Character', world.character);
 }
